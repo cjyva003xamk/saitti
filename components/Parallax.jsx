@@ -7,10 +7,9 @@ import { useParallax } from "react-scroll-parallax";
 const Parallax = () => {
 
     const rotate = useParallax({
-        scale: [0.1, 1, "easeInQuad"],
+        scale: [0.4, 1, "easeInQuad"],
+        rotateY: [360, 0, 360  ],
         translateY: ['-25vh', '25vh', 'easeInOut'],
-        rotateY: [0, 360, 0, 360, 0, 360],
-        translateY: [-50, 50],
     });
 
     const scale = useParallax({
@@ -29,17 +28,25 @@ const Parallax = () => {
         translateX: [-50, 0],
     });
 
+    const fastscroll = useParallax({
+        translateX: [-300, 300],
+        
+    });
+
     return (
 
         <>
-            <div className='flex items-center justify-center min-h-screen w-full bg-gray-300'>
-                <p className='text-3xl' ref={rotate.ref}>Parallax1</p>
+            <div className='flex items-center, justify-center h-10 bg-gray-400 overflow-hidden'>
+                <p ref={fastscroll.ref} >With tools like</p>
             </div>
-            <div className='flex items-center justify-center min-h-screen w-full bg-gray-400'>
-                <p className='text-3xl' ref={scale.ref}>2Parallax2</p>
+            <div className='flex items-center justify-center min-h-screen w-full bg-gray-300 overflow-hidden'>
+                <p className='text-6xl' ref={rotate.ref}>React, Next, Tailwind</p>
             </div>
-            <div className='flex items-center justify-center min-h-screen w-full bg-gray-500'>
-                <p className='text-3xl' ref={opa.ref}>3Parallax3</p>
+            <div className='flex items-center justify-center min-h-screen w-full bg-gray-400 overflow-hidden'>
+                <p className='text-6xl' ref={scale.ref}>Node, Express, SQL, </p>
+            </div>
+            <div className='flex items-center justify-center min-h-screen w-full bg-gray-500 overflow-hidden'>
+                <p className='text-6xl' ref={opa.ref}>Agile, Git, Docker</p>
             </div>
             <div className=' min-h-screen w-full bg-gray-500 relative overflow-hidden'>
                 <img src='/assets/images/fg.jpg' className='absolute w-full h-full object-cover' />
