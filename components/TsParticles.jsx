@@ -30,9 +30,28 @@ const TsParticles = () => {
             options={{
                 background: {
                     color: {
-                        value: "#0d47a1",
+                        value: "blue",
                     },
                 },
+                ///
+                fullScreen: {
+                    enable: false,
+                    /* zIndex: 1 */
+                }
+                /* all other options */
+                ,
+                style: {
+                    /* height: '100%', */
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    bottom: 0,
+                    right: 0,
+                    padding: 0,
+                    margin: 0,
+                    zIndex:0
+                },
+                //////
                 fpsLimit: 120,
                 interactivity: {
                     events: {
