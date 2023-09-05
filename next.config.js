@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    /* Tehdään static site out kansio build komennolla */
+    /* Static output */
     output:'export',
-    /* Tehdään static site asset tarkennus build komennolla ( ei tarvii) 
+    /* Asset fix (not needed) 
     assetPrefix:'./'*/
-    /* Korjataan refresh clientillä build komennolla */
+    /* Trailing slash fix */
     trailingSlash: true 
 }
 
