@@ -10,7 +10,7 @@ const ParallaxBanneri = () => {
                     speed: -50,
                     children: (
                         <div className="absolute inset-0 flex items-center justify-center">
-                            <h1 className="text-8xl text-white font-thin">Eager to find a New Path to explore</h1>
+                            <h1 className="text-8xl text-white font-thin">Eager to find New Paths to explore</h1>
                         </div>
                     ),
                 },

@@ -28,11 +28,12 @@ const TsParticles = () => {
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
-                background: {
-                    color: {
-                        value: "blue",
-                    },
-                },
+                /* background: {
+                     color: {
+                        value: "bg-gradient-to-b from-emerald-black to-emerald-600",
+                    }, 
+                    className:"bg-gradient-to-b from-emerald-black to-emerald-600"
+                }, */
                 ///
                 fullScreen: {
                     enable: false,
@@ -43,13 +44,13 @@ const TsParticles = () => {
                 style: {
                     /* height: '100%', */
                     position: 'absolute',
-                    top: 0,
+                    /* top: 0,
                     left: 0,
                     bottom: 0,
                     right: 0,
                     padding: 0,
                     margin: 0,
-                    zIndex:0
+                    zIndex:0 */
                 },
                 //////
                 fpsLimit: 120,
